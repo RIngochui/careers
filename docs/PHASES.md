@@ -7,7 +7,7 @@ Status key: `todo` · `in progress` · `needs Ringo` · `done`
 ---
 
 ## Phase 0: Project setup
-**Status:** todo
+**Status:** in progress
 
 Godot 4.7 project skeleton (Forward+), the Makefile with every target from PROMPT.md (stub the ones that need later phases), `.gitignore` for Godot, a README, the headless test runner, and `data/config.json` for the window title.
 
