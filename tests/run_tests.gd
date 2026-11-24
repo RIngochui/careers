@@ -2,6 +2,7 @@ extends SceneTree
 
 
 func _initialize() -> void:
+	await process_frame # root must be in the tree so _ready fires on added nodes
 	var dir := "res://tests"
 	for a in OS.get_cmdline_user_args():
 		if a.begins_with("--dir="):

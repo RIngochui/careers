@@ -13,6 +13,8 @@ shots:
 	mkdir -p review/shots
 	$(GODOT) --path . -- --shots
 movie:
+	@[ -d .godot ] || $(MAKE) import
+	mkdir -p review
 	$(GODOT) --path . --write-movie review/demo.avi --fixed-fps 30 --quit-after 90
 sim: ; @echo "sim: arrives in Phase 2"; exit 2
 art: ; @echo "art: arrives in Phase 5"; exit 2

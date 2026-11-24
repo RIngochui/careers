@@ -1,7 +1,6 @@
 extends Node3D
 
 const CONFIG_PATH := "res://data/config.json"
-const BG_COLOR := Color(0.18, 0.28, 0.4)
 
 
 func _ready() -> void:
@@ -10,7 +9,7 @@ func _ready() -> void:
 	add_child(Camera3D.new())
 	var env := Environment.new()
 	env.background_mode = Environment.BG_COLOR
-	env.background_color = BG_COLOR
+	env.background_color = Color(cfg["background_color"][0], cfg["background_color"][1], cfg["background_color"][2])
 	var we := WorldEnvironment.new()
 	we.environment = env
 	add_child(we)

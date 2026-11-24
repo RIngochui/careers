@@ -7,5 +7,5 @@ out=$(${GODOT:-godot} --headless --path . -s res://tests/run_tests.gd -- --dir="
 code=$?
 echo "$out"
 [ $code -eq 0 ] || exit 1
-echo "$out" | grep -qE "SCRIPT ERROR|Parse Error" && exit 1
+echo "$out" | grep -qE "SCRIPT ERROR|Parse Error|^ERROR:" && { echo "RUN FAILED: script/engine errors in log above (any PASS lines are not trustworthy)"; exit 1; }
 echo "$out" | grep -q "^ALL PASSED" || exit 1
