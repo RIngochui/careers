@@ -1,0 +1,21 @@
+# Godot
+.godot/
+*.import.bak
+export.cfg
+export_credentials.cfg
+*.translation
+
+# Builds and exports
+build/
+
+# Review output that is regenerated (keep REVIEW.md and sim.md in git)
+review/shots/
+review/*.avi
+review/*.png
+
+# Blender
+*.blend1
+
+# OS / editor
+.DS_Store
+.vscode/
