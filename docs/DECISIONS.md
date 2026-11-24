@@ -10,6 +10,7 @@ Ringo's rulings. They override `docs/RULES.md` and `PROMPT.md`. Add to this file
 - **No forks.** Occupations are entered exactly as in the original.
 - **Board look:** match the original's layout (outer track, corners, path positions and shapes), in 3D with Monopoly Plus-style presentation.
 - **Players:** 2–6, each on their own phone, with hot-seat keyboard mode as a fallback.
+- **Phase 0 defaults:** the window title is "Careers". Make targets not built yet print "arrives in Phase N" and exit with code 2, and the GDScript language server uses port 6005.
 
 ## Defaults awaiting confirmation
 (none yet)
