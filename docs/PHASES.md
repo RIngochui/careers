@@ -40,6 +40,10 @@ The researcher builds `docs/RULES.md` for the UK edition: turn sequence, success
 
 The whole game as pure GDScript, driven by data, proven by tests. No graphics.
 
+**Carry-over from Phase 0 (do first)**
+- [ ] Make the window-title test use a title different from the project name, so it can actually fail.
+- [ ] Give the test runner a per-test timeout, so a hanging test fails instead of blocking `make test`.
+
 **Done when**
 - [ ] `data/` holds the board, occupations, cards and amounts from `docs/RULES.md`; no rules or text in scripts.
 - [ ] Tests cover every space type, every occupation's special spaces, every card type, bumping, Hospital, Park Bench and the win check.

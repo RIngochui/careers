@@ -27,6 +27,7 @@ Commands: `/phase N` (full loop), `/research <question>` or `/research full`, `/
 - **A task isn't done until `make test` passes**, and for anything visible, `make shots` has been run and the PNGs looked at.
 - One task, one commit. Never push to a remote unless Ringo asks.
 - Only the researcher edits `docs/RULES.md`. Only `/decide` edits `docs/DECISIONS.md`. Nobody edits `PROMPT.md` or `.claude/` without Ringo.
+- At the end of every phase, add anything only Ringo can do to `docs/TODO.md`, and tick items off when they're done.
 
 ## Commands
 | Command | What it does |
